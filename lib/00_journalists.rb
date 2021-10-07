@@ -53,7 +53,7 @@ name_list = ["@jcunniet", "@PaulLampon", "@Aziliz31", "@ssoumier", "@marionsouze
 
 def handle_sum(name_list)
 
-  puts "il y a #{name_list.length} handles dans cette array"
+  puts "Il y a #{name_list.length} handles dans cette array"
 
 end
 
@@ -89,7 +89,7 @@ def five_chars (name_list)
 
   end
 
-  puts "il y a #{count} handles de 5 caharacteres"
+  puts "Il y a #{count} handles de 5 caharacteres"
 
 end
 
@@ -110,7 +110,7 @@ end
 
 def list_sort_chars (name_list)
 
-  puts "voici la liste triée"
+  puts "Voici la liste triée :"
   puts name_list.sort_by { |word| word.downcase }
 
 end
