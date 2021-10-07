@@ -64,24 +64,86 @@ def lower_than_6000 (crypto_name_value)
 
   crypto_name_value.each do |key, value|
 
-    if value < 6000
-      puts "la devise #{key} est inférieure à 6000 (#{value})"
+    if value.to_f < 6000
+      puts "la devise #{key} est inférieure à 6000 (#{value.to_f})"
     end
 
   end
 
 end
 
+def biggest_of_lowest (crypto_name_value)
 
-#TODO afficher la devise la plus chere parmis les devises a moins de 6000
+  big_value = 0.0
+  big_name = []
 
-def perform(crypto_name_value)
+  crypto_name_value.each do |key, value|
 
-  biggest_value(crypto_name_value)
-  lowest_value(crypto_name_value)
-  lower_than_6000(crypto_name_value)
+    if value.to_f < 6000
+      if value.to_f > big_value
+        big_value = value.to_f
+        big_name = []
+        big_name << key
+
+      elsif value.to_f == big_value
+        big_name << key
+      end
+
+
+
+      end
+
+  end
+
+  puts "Dans les devises inférieures à 6000, la plus forte est #{big_name}. Elle est cotée à #{big_value}."
 
 end
 
-perform(crypto_name_value)
+
+  def menu_list
+
+    puts "Veuillez choisir une consigne."
+    puts
+    puts "1. Afficher la crypto avec la plus grosse valeur."
+    puts "2. Afficher la crypto avec la plus faible valeur."
+    puts "3. Afficher toutes les cryptos avec une valeur inferieure a 6000."
+    puts "4. Afficher la crypto avec lplus grosse valeur parmis les cryptos ayajnt une valeur inferieure a 6000"
+    print "--->   "
+
+    question_number = gets.to_i
+
+    return question_number
+
+  end
+
+  def perform(crypto_name_value)
+
+    new_question = "oui"
+    yes = "oui"
+
+    while new_question == yes
+
+      question_number = menu_list
+
+      if question_number == 1
+        biggest_value(crypto_name_value)
+      elsif question_number == 2
+        lowest_value(crypto_name_value)
+      elsif question_number == 3
+        lower_than_6000(crypto_name_value)
+      elsif question_number == 4
+        biggest_of_lowest(crypto_name_value)
+      else
+        puts "Merci de sélectioner un numéro correspondant à une consigne."
+      end
+
+      puts "Voulez-vous sélectioner une nouvelle consigne ?"
+      print "[oui/non] ->   "
+      new_question = gets.chomp
+
+    end
+
+  end
+
+  perform(crypto_name_value)
 
