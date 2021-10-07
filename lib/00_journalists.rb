@@ -130,7 +130,11 @@ def list_sort_minmax (name_list)
 end
 
 
+def epenser (name_list)
 
+  puts name_list.index("@epenser")
+
+end
 
 
 
@@ -148,6 +152,7 @@ def perform(name_list)
   upper_first_letter(name_list)
   list_sort_chars(name_list)
   list_sort_minmax(name_list)
+  epenser(name_list)
 end
 
 perform(name_list)
