@@ -51,14 +51,11 @@ name_list = ["@jcunniet", "@PaulLampon", "@Aziliz31", "@ssoumier", "@marionsouze
              "@Lucile_Quillet", "@cgabizon", "@Allocab", "@epenser", "@JAGventeprivee", "@frwrds", "@Laure__Bourdon", "@Xavier75",
              "@maximeverner", "@s_jourdain", "@LoriHelloc"]
 
-
 def handle_sum(name_list)
 
-  puts "combien y a t'il de handle dans cette array ?"
-  puts name_list.length
+  puts "il y a #{name_list.length} handles dans cette array"
 
 end
-
 
 def min_handle(name_list)
 
@@ -69,7 +66,7 @@ def min_handle(name_list)
 
     if i.split("").length < i_chars
       i_chars = i.split("").length
-      min_hand =  i
+      min_hand = i
 
     end
 
@@ -79,7 +76,6 @@ def min_handle(name_list)
   puts min_hand
 
 end
-
 
 def five_chars (name_list)
 
@@ -98,7 +94,6 @@ def five_chars (name_list)
 
 end
 
-
 def upper_first_letter (name_list)
 
   count = 0
@@ -114,21 +109,19 @@ def upper_first_letter (name_list)
   puts count
 end
 
-
 def list_sort_chars (name_list)
 
   puts name_list.sort_by { |word| word.downcase }
 
 end
 
-
 def list_sort_minmax (name_list)
 
   puts 'trier la liste par odre de taille'
   puts name_list.sort_by { |word| word.length }
+  return name_list.sort_by { |word| word.length }
 
 end
-
 
 def epenser (name_list)
 
@@ -136,23 +129,100 @@ def epenser (name_list)
 
 end
 
+def size (name_list)
+
+  count = 0
+  count_chars = 0
+
+  list_sort_minmax(name_list).each do |i|
+
+    if i.length == count_chars
+      count += 1
+    elsif count_chars == 0
+      count = 1
+      count_chars = i.length
+    else
+
+      if count == 1
+        puts "Il y a #{count} mot avec #{count_chars} lettres."
+        count = 1
+        count_chars = i.length
+      else
+
+        puts "Il y a #{count} mots avec #{count_chars} lettres."
+        count = 1
+        count_chars = i.length
+
+      end
+
+    end
+
+  end
 
 
+  if count == 1
+    puts "Il y a #{count} mot avec #{count_chars} lettres."
+  else
+    puts  "Il y a #{count} mots avec #{count_chars} lettres."
+  end
 
+end
 
+def menu_list
 
+  puts "Bienvenue dans le menu principal de l'exo numero 1, veuillez choisir une question (saisissez son numéro) : "
+  puts "1. combien y a il de handle dans cette array ?"
+  puts "2. quel est le handle le plus court de cette liste"
+  puts "3. Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)"
+  puts "4. Combien commencent par une majuscule (première lettre juste après le @) ?"
+  puts "5. Trie la liste de handle par ordre alphabétique."
+  puts "6. Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
+  puts "7. Quelle est la position dans l'array de la personne @epenser ?"
+  puts "8. Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de
+  handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
+  print "--->   "
 
+  question_number = gets.to_i
 
+  return question_number
 
+end
 
 def perform(name_list)
-  handle_sum(name_list)
-  min_handle(name_list)
-  five_chars(name_list)
-  upper_first_letter(name_list)
-  list_sort_chars(name_list)
-  list_sort_minmax(name_list)
-  epenser(name_list)
+
+  new_question = "oui"
+  yes = "oui"
+
+  while new_question == yes
+
+    question_number = menu_list
+
+    if question_number == 1
+      handle_sum(name_list)
+    elsif question_number == 2
+      min_handle(name_list)
+    elsif question_number == 3
+      five_chars(name_list)
+    elsif question_number == 4
+      upper_first_letter(name_list)
+    elsif question_number == 5
+      list_sort_chars(name_list)
+    elsif question_number == 6
+      list_sort_minmax(name_list)
+    elsif question_number == 7
+      epenser(name_list)
+    elsif question_number == 8
+      size(name_list)
+    else
+      puts "veuillez choisir un nombre du menu correspondant a une question"
+    end
+
+    puts "voulez-vous poser une nouvelle question ?"
+    print "[oui/non] ->   "
+    new_question = gets.chomp
+
+  end
+
 end
 
 perform(name_list)
