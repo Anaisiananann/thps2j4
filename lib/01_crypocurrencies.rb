@@ -60,9 +60,16 @@ def lowest_value(crypto_name_value)
   end
 end
 
-def
+def lower_than_6000 (crypto_name_value)
 
-#TODO afficher les devises dont le court est inférieur a 6000
+  crypto_name_value.each do |key, value|
+    if value < 6000
+      puts "la devise #{key} est inférieure à 6000 (#{value})"
+    end
+
+  end
+
+end
 
 
 #TODO afficher la devise la plus chere parmis les devises a moins de 6000
