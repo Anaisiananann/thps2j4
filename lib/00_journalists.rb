@@ -127,6 +127,7 @@ def perform(name_list)
   handle_sum(name_list)
   min_handle(name_list)
   five_chars(name_list)
+  upper_first_letter(name_list)
 end
 
 perform(name_list)
