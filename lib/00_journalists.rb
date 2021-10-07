@@ -117,13 +117,7 @@ end
 
 def list_sort_chars (name_list)
 
-  new_name_list = []
-
-  name_list.each do |i|
-    new_name_list << i.chomp('@')
-  end
-
-  puts new_name_list.sort_by { |word| word.downcase }
+  puts name_list.sort_by { |word| word.downcase }
 
 end
 
@@ -142,6 +136,7 @@ def perform(name_list)
   five_chars(name_list)
   upper_first_letter(name_list)
   list_sort_chars(name_list)
+  list_sort_minmax(name_list)
 end
 
 perform(name_list)
