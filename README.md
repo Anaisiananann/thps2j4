@@ -1,5 +1,5 @@
-## projet validant du jeudi de la semaine 2 de THP
+## Projet validant du jeudi de la semaine 2 de THP
 
-### projet fait en quipe de pair programming :
+### Projet fait en équipe de pair programming :
 - Anaïs Thibaudin
 - Anthony Charpenay
