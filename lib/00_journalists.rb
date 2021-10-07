@@ -63,17 +63,20 @@ end
 def min_handle(name_list)
 
   i_chars = 100
+  min_hand = ""
 
   name_list.each do |i|
 
     if i.split("").length < i_chars
       i_chars = i.split("").length
+      min_hand =  i
+
     end
 
   end
 
   puts "quel est le plus petit handle ?"
-  puts i_chars
+  puts min_hand
 
 end
 
