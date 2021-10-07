@@ -53,7 +53,7 @@ name_list = ["@jcunniet", "@PaulLampon", "@Aziliz31", "@ssoumier", "@marionsouze
 
 def handle_sum(name_list)
 
-  puts "Il y a #{name_list.length} handles dans cette array"
+  puts "Il y a #{name_list.length} handle dans cette array."
 
 end
 
@@ -72,7 +72,7 @@ def min_handle(name_list)
 
   end
 
-  puts "Le plus petit handle est #{min_hand}"
+  puts "Le plus petit handle est #{min_hand}."
 
 
 end
@@ -89,7 +89,7 @@ def five_chars (name_list)
 
   end
 
-  puts "Il y a #{count} handles de 5 caharacteres"
+  puts "Il y a #{count} handle de 5 caractères."
 
 end
 
@@ -104,7 +104,7 @@ def upper_first_letter (name_list)
     end
 
   end
-  puts "Il y a #{count} qui commencent par une majuscule?"
+  puts "Il y a #{count} handle qui commencent par une majuscule."
 
 end
 
@@ -125,7 +125,7 @@ end
 
 def epenser (name_list)
 
-  puts "@epenser est a la #{name_list.index("@epenser")}éme place dans l'array"
+  puts "@epenser est a la #{name_list.index("@epenser")}éme place dans l'array."
 
 end
 
@@ -215,7 +215,7 @@ def perform(name_list)
     elsif question_number == 8
       size(name_list)
     else
-      puts "Veuillez choisir un nombre du menu correspondant a une question"
+      puts "Veuillez choisir un nombre du menu correspondant à une question"
     end
 
     puts "Voulez-vous poser une nouvelle question ?"
