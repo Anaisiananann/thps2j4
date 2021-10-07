@@ -122,7 +122,12 @@ def list_sort_chars (name_list)
 end
 
 
+def list_sort_minmax (name_list)
 
+  puts 'trier la liste par odre de taille'
+  puts name_list.sort_by { |word| word.length }
+
+end
 
 
 
