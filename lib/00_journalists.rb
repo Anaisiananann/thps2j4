@@ -77,6 +77,7 @@ def min_handle(name_list)
 
 end
 
+
 def five_chars (name_list)
 
   count = 0
@@ -95,6 +96,28 @@ def five_chars (name_list)
 end
 
 
+def upper_first_letter (name_list)
+
+  count = 0
+
+  name_list.each do |i|
+
+    if (i.split(""))[1] == (i.split(""))[1].upcase
+      count += 1
+    end
+
+  end
+  puts "Combien de handle commencent par une majuscule?"
+  puts count
+end
+
+
+
+
+
+
+
+
 
 
 
@@ -107,13 +130,3 @@ def perform(name_list)
 end
 
 perform(name_list)
-
-
-
-
-
-
-
-
-
-
