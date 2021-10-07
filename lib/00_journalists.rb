@@ -77,7 +77,22 @@ def min_handle(name_list)
 
 end
 
+def five_chars (name_list)
 
+  count = 0
+
+  name_list.each do |i|
+
+    if (i.split("").length - 1) == 5
+      count += 1
+    end
+
+  end
+
+  puts "Combien y-a-t'il de handle de 5 caractères?"
+  puts count
+
+end
 
 
 
@@ -88,6 +103,7 @@ end
 def perform(name_list)
   handle_sum(name_list)
   min_handle(name_list)
+  five_chars(name_list)
 end
 
 perform(name_list)
