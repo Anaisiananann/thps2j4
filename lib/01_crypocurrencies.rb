@@ -79,6 +79,7 @@ def perform(crypto_name_value)
 
   biggest_value(crypto_name_value)
   lowest_value(crypto_name_value)
+  lower_than_6000(crypto_name_value)
 
 end
 
