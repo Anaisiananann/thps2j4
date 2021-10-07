@@ -9,17 +9,17 @@ crypto_name_value = Hash[crypto_name.zip(crypto_value)]
 
 def biggest_value(crypto_name_value)
 
-  big_value = 0
+  big_value = 0.0
   big_name = []
 
   crypto_name_value.each do |key, value|
 
-    if value.to_i > big_value
-      big_value = value.to_i
+    if value.to_f > big_value
+      big_value = value.to_f
       big_name = []
       big_name << key
 
-    elsif value == big_value
+    elsif value.to_f == big_value
       big_name << key
 
     end
@@ -37,19 +37,23 @@ end
 def lowest_value(crypto_name_value)
   #TODO afficher la ou les crypto qui ont la plus petite valeur
 
-  small_value = 100000
+  small_value = 100000.0
   small_name = []
 
   crypto_name_value.each do |key, value|
-    
-    if value.to_i < small_value
-      small_value = value.to_i
+
+    if value.to_f < small_value
+      small_value = value.to_f
+      small_name = []
+      small_name << key
+    elsif small_value == value.to_f
+      small_name << key
+
     end
-    
+
   end
 
 end
-
 
 #TODO afficher les devises dont le court est inférieur a 6000
 
