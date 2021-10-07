@@ -72,8 +72,8 @@ def min_handle(name_list)
 
   end
 
-  puts "quel est le plus petit handle ?"
-  puts min_hand
+  puts "Le plus petit handle est #{min_hand}"
+
 
 end
 
@@ -117,7 +117,7 @@ end
 
 def list_sort_minmax (name_list)
 
-  puts 'trier la liste par odre de taille'
+  puts 'Trier la liste par ordre de taille'
   puts name_list.sort_by { |word| word.length }
   return name_list.sort_by { |word| word.length }
 
