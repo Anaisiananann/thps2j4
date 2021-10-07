@@ -171,12 +171,13 @@ end
 def menu_list
 
   puts "Bienvenue dans le menu principal de l'exo numero 1, veuillez choisir une question (saisissez son numéro) : "
-  puts "1. combien y a il de handle dans cette array ?"
-  puts "2. quel est le handle le plus court de cette liste"
-  puts "3. Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)"
+  puts
+  puts "1. Combien y-a-t'il de handle dans cette array ?"
+  puts "2. Quel est le handle le plus court de cette liste?"
+  puts "3. Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère)?"
   puts "4. Combien commencent par une majuscule (première lettre juste après le @) ?"
   puts "5. Trie la liste de handle par ordre alphabétique."
-  puts "6. Trie la liste de handle par taille des handle (les plus petits en premiers, les plus grands après)"
+  puts "6. Trie la liste de handle par taille des handle (les plus petits en premier, les plus grands après)"
   puts "7. Quelle est la position dans l'array de la personne @epenser ?"
   puts "8. Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de
   handle avec 2 caractères, nombre de handle avec 3 caractères, etc)"
@@ -214,10 +215,10 @@ def perform(name_list)
     elsif question_number == 8
       size(name_list)
     else
-      puts "veuillez choisir un nombre du menu correspondant a une question"
+      puts "Veuillez choisir un nombre du menu correspondant a une question"
     end
 
-    puts "voulez-vous poser une nouvelle question ?"
+    puts "Voulez-vous poser une nouvelle question ?"
     print "[oui/non] ->   "
     new_question = gets.chomp
 
