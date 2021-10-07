@@ -89,8 +89,7 @@ def five_chars (name_list)
 
   end
 
-  puts "Combien y-a-t'il de handle de 5 caractères?"
-  puts count
+  puts "il y a #{count} handles de 5 caharacteres"
 
 end
 
@@ -111,6 +110,7 @@ end
 
 def list_sort_chars (name_list)
 
+  puts "voici la liste triée"
   puts name_list.sort_by { |word| word.downcase }
 
 end
@@ -125,7 +125,7 @@ end
 
 def epenser (name_list)
 
-  puts name_list.index("@epenser")
+  puts "@epenser est a la #{name_list.index("@epenser")}éme place dans l'array"
 
 end
 
