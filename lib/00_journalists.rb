@@ -45,8 +45,8 @@ name_list = ["@jcunniet", "@PaulLampon", "@Aziliz31", "@ssoumier", "@marionsouze
              "@vtalmon", "@cedric", "@olivierfrigara", "@Julien_Jay", "@LydiaBerroyer", "@Shuua", "@datisdaz", "@Steuph", "@ameliecharnay",
              "@Bruno_LesNums", "@LelloucheNico", "@CciliaDiQuinzio", "@Elodie_C", "@SylvRolland", "@Kocobe", "@FL_Debes", "@jdupontcalbo",
              "@GarciaVictor_", "@NicoRichaud", "@RHoueix", "@simottel", "@DamienLicata", "@annabelle_L", "@Lea_Lejeune", "@axel_deb",
-             "@marin_eben", "@ptiberry", "@MatthieuDelach", "@sandrinecassini", "@benjaminferran", "@ppgarcia75", "@NotPatrick", "
-              @ivalerio", "@FabienneSchmitt", "@alexgoude", "@JeromeColombain", "@manhack", "@Capucine_Cousin", "@Fsorel", "@oliviertesquet",
+             "@marin_eben", "@ptiberry", "@MatthieuDelach", "@sandrinecassini", "@benjaminferran", "@ppgarcia75", "@NotPatrick",
+             "@ivalerio", "@FabienneSchmitt", "@alexgoude", "@JeromeColombain", "@manhack", "@Capucine_Cousin", "@Fsorel", "@oliviertesquet",
              "@marjoriepaillon", "@ginades", "@PierreTran", "@DelphineCuny", "@reesmarc", "@lauratenoudji", "@ldupin", "@carolinedescham",
              "@Lucile_Quillet", "@cgabizon", "@Allocab", "@epenser", "@JAGventeprivee", "@frwrds", "@Laure__Bourdon", "@Xavier75",
              "@maximeverner", "@s_jourdain", "@LoriHelloc"]
