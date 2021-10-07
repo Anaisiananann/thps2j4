@@ -63,6 +63,7 @@ end
 def lower_than_6000 (crypto_name_value)
 
   crypto_name_value.each do |key, value|
+
     if value < 6000
       puts "la devise #{key} est inférieure à 6000 (#{value})"
     end
