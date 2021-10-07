@@ -53,15 +53,24 @@ def lowest_value(crypto_name_value)
 
   end
 
+  if small_name.length > 1
+    puts "Les cryptos les plus faibles sont #{small_name}. Elles sont cotées à #{small_value}."
+  else
+    puts "La crypto la plus faible est #{small_name}. Elle est cotée à #{small_value}."
+  end
 end
 
+def
+
 #TODO afficher les devises dont le court est inférieur a 6000
+
 
 #TODO afficher la devise la plus chere parmis les devises a moins de 6000
 
 def perform(crypto_name_value)
 
   biggest_value(crypto_name_value)
+  lowest_value(crypto_name_value)
 
 end
 
