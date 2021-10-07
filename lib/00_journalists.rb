@@ -72,6 +72,7 @@ def min_handle(name_list)
 
   end
 
+  puts "quel est le plus petit handle ?"
   puts i_chars
 
 end
@@ -84,12 +85,12 @@ end
 
 
 
-def perform
+def perform(name_list)
   handle_sum(name_list)
   min_handle(name_list)
 end
 
-perform
+perform(name_list)
 
 
 
