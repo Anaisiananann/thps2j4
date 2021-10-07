@@ -104,8 +104,8 @@ def upper_first_letter (name_list)
     end
 
   end
-  puts "Combien de handle commencent par une majuscule?"
-  puts count
+  puts "Il y a #{count} qui commencent par une majuscule?"
+
 end
 
 def list_sort_chars (name_list)
@@ -117,7 +117,7 @@ end
 
 def list_sort_minmax (name_list)
 
-  puts 'Trier la liste par ordre de taille'
+  puts 'Voici la liste par nombre de caractères croissants: '
   puts name_list.sort_by { |word| word.length }
   return name_list.sort_by { |word| word.length }
 
