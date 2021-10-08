@@ -115,10 +115,14 @@ def list_sort_chars (name_list)
 
 end
 
-def list_sort_minmax (name_list)
+def list_sort_minmax (name_list, question_number)
 
   puts 'Voici la liste par nombre de caractères croissants: '
-  puts name_list.sort_by { |word| word.length }
+
+  if question_number == 6
+    puts name_list.sort_by { |word| word.length }
+  end
+
   return name_list.sort_by { |word| word.length }
 
 end
@@ -129,12 +133,12 @@ def epenser (name_list)
 
 end
 
-def size (name_list)
+def size (name_list, question_number)
 
   count = 0
   count_chars = 0
 
-  list_sort_minmax(name_list).each do |i|
+  list_sort_minmax(name_list, question_number).each do |i|
 
     if i.length == count_chars
       count += 1
@@ -209,11 +213,11 @@ def perform(name_list)
     elsif question_number == 5
       list_sort_chars(name_list)
     elsif question_number == 6
-      list_sort_minmax(name_list)
+      list_sort_minmax(name_list, question_number)
     elsif question_number == 7
       epenser(name_list)
     elsif question_number == 8
-      size(name_list)
+      size(name_list, question_number)
     else
       puts "Veuillez choisir un nombre du menu correspondant à une question"
     end
